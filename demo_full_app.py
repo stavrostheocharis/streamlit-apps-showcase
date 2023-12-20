@@ -3,13 +3,19 @@ import demo_mock_token_service as mts
 from token_craft import st_token_table
 
 st.header("Welcome to the Streamlit Token Craft example app! ✨")
-
+st.warning(
+    "It is recommended to use the light streamlit theme, since the css for the dark one is under development",
+    icon="⚠️",
+)
 st.markdown(
     """
 This streamlit app showcases the usage of the new custom streamlit component streamlit-token-craft
 For more information, please [click here](https://github.com/stavrostheocharis/streamlit-token-craft).
 """
 )
+
+st.divider()
+
 # Initialize session state keys if they don't exist
 for key in [
     "show_basic_key",
