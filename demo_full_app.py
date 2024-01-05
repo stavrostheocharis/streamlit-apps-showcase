@@ -3,9 +3,9 @@ import demo_mock_token_service as mts
 from token_craft import st_token_table
 
 st.header("Welcome to the Streamlit Token Craft example app! ✨")
-st.warning(
-    "It is recommended to use the light streamlit theme, since the css for the dark one is under development",
-    icon="⚠️",
+st.success(
+    "A new release '0.2.0' is now available where the dark theme functionality is fixed!",
+    icon="🔥",
 )
 st.markdown(
     """
